@@ -306,7 +306,7 @@ window.onload = function(){
             // we keep track of the loaded files vs the requested files
             loaded++;
             console.log(loaded + " words.");
-            if (loaded > 50){
+            if (loaded > 20){
             	// enough have loaded
             	init();
             }
