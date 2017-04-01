@@ -1,17 +1,30 @@
 {
   "name": "spelling-bee",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
+  "version": "1.0.0",
+  "description": "A spelling-bee game",
+  "main": "app.js",
   "dependencies": {
-    "body-parser": "~1.16.0",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.0",
-    "express": "~4.14.1",
-    "morgan": "~1.8.1",
-    "pug": "~2.0.0-beta10",
-    "serve-favicon": "~2.4.0"
-  }
+    "bootstrap": "^3.3.7",
+    "nodemon": "^1.11.0",
+    "express":"4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evandocarmo/spelling-bee.git"
+  },
+  "keywords": [
+    "spelling",
+    "bee"
+  ],
+  "author": "Evan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evandocarmo/spelling-bee/issues"
+  },
+  "homepage": "https://github.com/evandocarmo/spelling-bee#readme"
 }
