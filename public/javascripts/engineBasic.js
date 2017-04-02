@@ -309,10 +309,15 @@ window.onload = function(){
         
         function correction(){
             var answer = document.getElementById('answer').value.toLowerCase();
+            var result = document.getElementById('result');
             if (answer === cleanWord){
-                document.getElementById("result").innerHTML = "Yes! That's correct!";
+                result.classList.add('correct');
+                result.classList.remove('incorrect');
+                result.innerHTML = "Yes! That's correct!";
             } else {
-                document.getElementById("result").innerHTML = "Sorry, try again!";
+                result.classList.add('incorrect');
+                result.classList.remove('correct');
+                result.innerHTML = "Sorry, try again!";
             }
         }
         

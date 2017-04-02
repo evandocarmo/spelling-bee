@@ -76,6 +76,33 @@ h1 {
     width: 100%;
 }
 
+.correct {
+    padding: 15px 32px;
+    text-align:center;
+    background-color:#4DBD33;
+    color:white;
+    font-size:140%;
+}
+.incorrect {
+    padding:15px 32px;
+    text-align:center;
+    background-color:#BE2625;
+    color:white;
+    font-size:140%;
+}
+
+#reveal {
+    padding:15px 32px;
+    text-align:center;
+    color:black;
+    font-size:140%;
+    transition:all 1s;
+}
+
+#result {
+    transition:all 1s;
+}
+
 .returnbutton {
     background-color: gold;
     border:none;
@@ -93,7 +120,7 @@ h1 {
 }
 .gamebuttons {
     background-color: gold;
-    border:none;
+    border:1px black solid;
     color:black;
     padding: 10px;
     font-size:15px;
