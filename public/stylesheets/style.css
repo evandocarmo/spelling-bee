@@ -195,6 +195,7 @@ th,tr,td {
         flex-wrap:wrap;
     display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
 display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
+display:flex;
 }
 
 .col-1 {
