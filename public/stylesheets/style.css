@@ -27,13 +27,9 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
   }
 body{
@@ -124,10 +120,12 @@ h1 {
     text-align:center;
     color:black;
     font-size:140%;
+    -webkit-transition: all 1s;
     transition:all 1s;
 }
 
 #result {
+    -webkit-transition: all 1s;
     transition:all 1s;
 }
 
@@ -151,11 +149,9 @@ h1 {
     border:1px black solid;
     color:black;
     padding: 5%;
-    font-size:75%;
     font-family: 'Oswald',sans-serif;
     cursor: pointer;
     text-align: center;
-    
 }
 
 #easy {
@@ -195,12 +191,10 @@ th,tr,td {
     width: 100%;
     margin-bottom: 10px;
     display:flex;
-    flex-wrap:wrap;
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
-display: flex;  
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 }
 
 .col-1 {
@@ -294,10 +288,17 @@ td:before {
     height:100%;
     background-color:white;
     position:fixed;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     opacity:    0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     z-index:    10;
 }
 .spinningCircle {

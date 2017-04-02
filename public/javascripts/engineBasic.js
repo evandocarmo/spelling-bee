@@ -295,9 +295,8 @@ window.onload = function(){
     var player = document.getElementById('player');
     
     function init(){
-        var loading = document.getElementById("loading");
-        if(loading)
-            loading.parentNode.removeChild(loading);
+        if(document.getElementById("loading"))
+            document.getElementById("loading").parentNode.removeChild(document.getElementById("loading"));
         console.log('Start game!');
         function playWord(){
             randomIndex = Math.floor(Math.random() * audioFiles.length);
