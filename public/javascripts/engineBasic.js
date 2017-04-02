@@ -312,11 +312,17 @@ window.onload = function(){
             if (answer === cleanWord){
                 result.classList.add('correct');
                 result.classList.remove('incorrect');
-                result.innerHTML = "Yes! That's correct!";
+                result.innerHTML = '...';
+                setTimeout(function(){
+                    result.innerHTML = "Yes! That's correct!";
+                },500);
             } else {
                 result.classList.add('incorrect');
                 result.classList.remove('correct');
-                result.innerHTML = "Sorry, try again!";
+                result.innerHTML = '...';
+                setTimeout(function(){
+                    result.innerHTML = "Sorry, try again!";
+                },500);
             }
         }
         

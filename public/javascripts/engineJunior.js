@@ -267,17 +267,22 @@ window.onload = function(){
             }
             
             function correction(){
-                var answer = document.getElementById('answer').value.toLowerCase();
-                var result = document.getElementById('result');
-                if (answer === cleanWord){
-                    result.classList.add('correct');
-                    result.classList.remove('incorrect');
+            var answer = document.getElementById('answer').value.toLowerCase();
+            var result = document.getElementById('result');
+            if (answer === cleanWord){
+                result.classList.add('correct');
+                result.classList.remove('incorrect');
+                result.innerHTML = '...';
+                setTimeout(function(){
                     result.innerHTML = "Yes! That's correct!";
-                } else {
-                    result.classList.add('incorrect');
-                    result.classList.remove('correct');
+                },500);
+            } else {
+                result.classList.add('incorrect');
+                result.classList.remove('correct');
+                result.innerHTML = '...';
+                setTimeout(function(){
                     result.innerHTML = "Sorry, try again!";
-                }
+                },500);
             }
             
             function reveal(){
