@@ -284,6 +284,7 @@ window.onload = function(){
                     result.innerHTML = "Sorry, try again!";
                 },500);
             }
+        }
             
             function reveal(){
                  document.getElementById('reveal').innerHTML = "</br>" + cleanWord;
@@ -316,10 +317,10 @@ window.onload = function(){
             // we keep track of the loaded files vs the requested files
             loaded++;
             console.log(loaded + " words.");
-            //if (loaded > 10){
+            if (loaded > 10){
             	// enough have loaded
             	init();
-            //}
+            }
         }
         
         function preloadAudio(url) {
