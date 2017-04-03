@@ -21,4 +21,8 @@ app.get('/list',function(req,res){
   res.sendFile(path.join(__dirname+'/views/list.html'));
 });
 
+app.get('/test',function(req,res){
+  res.sendFile(path.join(__dirname+'/views/test.html'));
+})
+
 app.listen(process.env.PORT, process.env.IP);

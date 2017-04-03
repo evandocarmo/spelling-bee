@@ -1,3 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>3rd Cultura Inglesa's Spelling Bee </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+		<link href='https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href='./public/stylesheets/style.css' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+
+	</head>
+	
+	<body>
+	<script src="./public/javascripts/engineBasic.js"></script>
+	
+		<div id="loading"><div class="spinningCircle"></div></div>
+
+		<div class="grid">
+
+			<div class='row'>
+
+				<div class='col-1'>
+				<img id= 'queenBeeLeft' src='public/images/queenbee.png' alt='queenbee'>
+				</div>
+				<div class='col-10'>
+				<h1>Cultura Inglesa's <br> Spelling Bee </h1>
+				</div>
+				<div class='col-1'>
+				<img id= 'queenBeeRight' src='public/images/queenbee.png' alt='queenbee'>
+				</div>
+		
+			</div>
+			<div class='row'>
+
+				<div class = 'col-12'>
+
+					<a class="returnbutton" id="return" href="/">Return</a>
+
+				</div>
+
+			</div>
+
+			<div class = 'row'>
+				<div class = 'col-12'>
+					<fieldset class='text-center fieldset'>
+						<legend><strong>Basic</strong></legend>
+						<input id="newword" type="button" value="New Word" class="gamebuttons">
+						<input id="repeat" type="button" value = "Repeat" class="gamebuttons">
+						<input id="answer" class='spellInput' type="text" autocomplete="off" placeholder="Spell the word here!">
+						<input id="submit" type="button" value = "Check" class="gamebuttons">
+						<input id="revealButton" type="button" value = "Reveal" class="gamebuttons">
+						<p id ="result" class='output'></p>
+						<p id="reveal" class='output'></p>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	<audio id="player"></audio>
+	<script>
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -88,7 +149,7 @@ window.onload = function () {
           document.getElementById('reveal').innerHTML = "</br>" + cleanWord;
         }
 
-        function correctionEnter(event) {
+        function correctionEnter() {
           var y = event.keyCode;
           if (y === 13) correction();
         }
@@ -151,3 +212,6 @@ window.onload = function () {
   var buffer = new Buffer(context, audioFiles);
   buffer.loadAll();
 };
+	</script>
+</body>
+</html>
