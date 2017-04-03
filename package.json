@@ -4,9 +4,9 @@
   "description": "A spelling-bee game",
   "main": "app.js",
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "nodemon": "^1.11.0",
-    "express":"4.15.2"
+    "express":"4.15.2",
+    "mysql":"2.13.0"
   },
   "devDependencies": {},
   "scripts": {
