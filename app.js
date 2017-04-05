@@ -28,8 +28,12 @@ app.get('/gameBasic', function(req, res) {
     res.sendFile(path.join(__dirname + '/views/gameBasic.html'));
 });
 
-app.get('/list', function(req, res) {
-    res.sendFile(path.join(__dirname + '/views/list.html'));
+app.get('/listJunior', function(req, res) {
+    res.sendFile(path.join(__dirname + '/views/listJunior.html'));
+});
+
+app.get('/listBasic', function(req, res) {
+    res.sendFile(path.join(__dirname + '/views/listBasic.html'));
 });
 
 app.get('/rankJunior', function(req, res) {
